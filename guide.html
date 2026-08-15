@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dustimony User Guide</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    max-width: 760px; margin: 0 auto; padding: 32px 20px 72px;
+    line-height: 1.6; color: #101C2E; background: #fff;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e6e6e6; background: #121212; }
+    a { color: #8FD3FF; }
+    figure img { border-color: #333; }
+    .tip { background: rgba(143, 211, 255, 0.10); }
+  }
+  h1 { font-size: 1.8em; margin-bottom: 0.2em; }
+  h2 { font-size: 1.3em; margin-top: 2.2em; border-bottom: 1px solid rgba(128,128,128,0.25); padding-bottom: 6px; }
+  h3 { font-size: 1.05em; margin-top: 1.4em; }
+  a { color: #2C5591; }
+  nav.top { margin-bottom: 2em; font-size: 0.95em; }
+  .meta { color: #777; font-size: 0.9em; }
+  .section { display: flex; gap: 28px; align-items: flex-start; flex-wrap: wrap; }
+  .section .text { flex: 1 1 340px; }
+  figure { margin: 1em 0; flex: 0 0 auto; }
+  figure img {
+    width: 260px; max-width: 100%; border: 1px solid #ddd;
+    border-radius: 18px; display: block;
+  }
+  figcaption { font-size: 0.85em; color: #777; margin-top: 6px; max-width: 260px; }
+  .tip {
+    background: rgba(44, 85, 145, 0.08); border-radius: 10px;
+    padding: 12px 16px; margin: 1em 0; font-size: 0.95em;
+  }
+  code { background: rgba(128,128,128,0.15); padding: 1px 6px; border-radius: 5px; font-size: 0.9em; }
+  ul { padding-left: 1.2em; }
+  li { margin: 0.35em 0; }
+</style>
+</head>
+<body>
+<nav class="top"><a href="index.html">Dustimony</a> · <a href="support.html">Support</a> · <a href="privacy.html">Privacy</a></nav>
+
+<h1>Dustimony™ User Guide</h1>
+<p class="meta">For Dustimony 1.0 on iPhone</p>
+
+<p>Dustimony runs a cleaning business from your pocket: who you clean for, what gets done
+in each house, and what you are owed. Your book works with no signal, so a basement with
+no bars never stops your day. This guide walks the app the way you walk a work day.</p>
+
+<p class="tip">Your clients never install anything. Texts come from your own phone number,
+and invoices arrive as normal PDFs. If you switch on card payments, they tap a link and
+pay on Stripe's secure page. To them it is just you, organized.</p>
+
+<h2 id="clients">1. Get your clients in</h2>
+<div class="section">
+<div class="text">
+<p>Open the <strong>Clients</strong> tab and tap <strong>+</strong>. Add one client by
+hand, with their address and schedule on a single screen, or bring your whole list at
+once.</p>
+<ul>
+  <li><strong>From Contacts:</strong> pick the people who are clients. Names, phones and
+  addresses come across.</li>
+  <li><strong>From a spreadsheet:</strong> a CSV out of Excel, Numbers or Google Sheets.
+  Only a name column is required and column order does not matter. You see a preview of
+  exactly what will be created, with any problems flagged, before anything is saved.</li>
+</ul>
+<p>Give a client a schedule (weekly, every two weeks, or monthly) and the coming weeks
+fill in by themselves. The list shows each client's cadence and what they owe, and the
+filters at the top split it into Active, Leads and Past due.</p>
+</div>
+<figure><img src="guide/clients.png" alt="The clients list"><figcaption>Cadence and
+balance on every row, with Active, Leads and Past due as filters.</figcaption></figure>
+</div>
+
+<h2 id="prices">2. Your prices</h2>
+<div class="section">
+<div class="text">
+<p><strong>Settings → Service catalog</strong> is your price list. It arrives filled in
+with the jobs most cleaners sell: standard, deep, move-in/move-out and
+post-construction, with a set of add-ons underneath. Every one is yours to rename, reprice or delete.</p>
+<p>Two things read from this list. A new booking offers these services at these prices,
+and the add-ons become the chips you tap when you finish a job. Change a price here and
+future work uses it; work already completed keeps the price it was done at, because that
+number is history, not a setting.</p>
+</div>
+<figure><img src="guide/pricelist.png" alt="Service catalog"><figcaption>Services and
+add-ons, each with a price and how long it usually takes.</figcaption></figure>
+</div>
+
+<h2 id="today">3. Run your day</h2>
+<div class="section">
+<div class="text">
+<p>The <strong>Today</strong> tab is the working screen. Your stops are in time order with
+the address, the access note, and a directions button that opens Maps. The header counts
+what is left and what you have earned so far.</p>
+<p>Tap <strong>Timer</strong> to start the clock when you walk in. If you forget to start
+it, or forget to stop it, you can type the real minutes at completion. The app never
+invents a number for you.</p>
+<p>Running behind? Dustimony offers to text the clients who are still waiting, one message
+each, from your number. You tap send.</p>
+</div>
+<figure><img src="guide/today.png" alt="The Today tab"><figcaption>What is left, what is
+done, and what today has earned.</figcaption></figure>
+</div>
+
+<h2 id="house">4. At the house</h2>
+<div class="section">
+<div class="text">
+<p>Tap a stop to open it. This is the screen you work from: how to get in, and what the
+client expects done.</p>
+<ul>
+  <li><strong>The checklist</strong> is room by room, from the template on the property.
+  Tick items as you go. It saves as you tap.</li>
+  <li><strong>Access and alarm notes</strong> sit at the top, so a gate code or an alarm
+  sequence is one tap away rather than a text you have to find.</li>
+  <li><strong>Add for this visit only</strong> puts an extra item on today's list without
+  changing the template for every future clean.</li>
+</ul>
+<p>Door codes, key locations and alarm details are private. They live in your own iCloud,
+they are never written to a log, and they never leave the device unless you send them.</p>
+</div>
+<figure><img src="guide/visit.png" alt="A visit with its room checklist"><figcaption>Access
+notes at the top, the room-by-room list underneath.</figcaption></figure>
+</div>
+
+<h2 id="complete">5. Complete a job</h2>
+<div class="section">
+<div class="text">
+<p><strong>Complete</strong> opens the sheet where the job becomes money. The price is
+already filled in from the booking. Tap a chip to add an extra. The price on the chip is
+the one from your catalog, and the total moves as you tap.</p>
+<p>The time is whatever the timer recorded, and you can correct it by typing the minutes
+or the start and end times. Notes are for the thing the word "notes" cannot say: the key
+that would not turn, the room you could not reach.</p>
+<p><strong>Done</strong> records the charge against the client. Nothing is sent to anyone
+at this point; the money side is yours to run when you choose.</p>
+</div>
+<figure><img src="guide/complete.png" alt="The completion sheet"><figcaption>Prefilled
+price, add-on chips, and the time the job actually took.</figcaption></figure>
+</div>
+
+<h2 id="week">6. The week</h2>
+<div class="section">
+<div class="text">
+<p>The <strong>Schedule</strong> tab shows the week a day at a time, with each day's count
+and what it is worth. Switch to <strong>Month</strong> for the shape of the month, where a
+dot marks a booked day.</p>
+<p>Move a visit and the app asks whether you mean this one or the whole series. Take a
+holiday or a slow week off and those days clear for everyone, with the bookings picking
+up on the other side.</p>
+<p>If a booking ever collides with another, the row says so with a warning, before you
+drive to it.</p>
+</div>
+<figure><img src="guide/schedule.png" alt="The week planner"><figcaption>Nine visits and
+what the week is worth, two per day.</figcaption></figure>
+</div>
+
+<h2 id="texts">7. Text your clients</h2>
+<div class="section">
+<div class="text">
+<p><strong>Settings → Message templates</strong> holds every message Dustimony writes: the
+day-before reminder, on my way, running late, the invoice text, and the three payment
+reminders. Tokens like <code>{{name}}</code> and <code>{{time}}</code> fill themselves in.</p>
+<p><strong>Arrival time</strong> decides what a client is told. Exact time sends "9:00 AM".
+An arrival window sends "between 9:00 and 11:00", which is a promise you can keep on a day
+that runs long. Your own screens always show the exact time.</p>
+<p>Every message opens in your phone's Messages app with the text already written. Nothing
+is ever sent automatically, and it comes from your number, not ours.</p>
+</div>
+<figure><img src="guide/templates.png" alt="Message templates"><figcaption>Each message is
+yours to rewrite. The tokens fill themselves in.</figcaption></figure>
+</div>
+
+<h2 id="paid">8. Get paid</h2>
+<div class="section">
+<div class="text">
+<p>The <strong>Money</strong> tab opens on what you are owed, split by how old it is.
+Anything past thirty days is worth a nudge, and the reminder is already written.</p>
+<p>Record cash, a check, Venmo, Zelle, Apple Pay or a card payment against a client in two
+taps. The balance updates as you do.</p>
+</div>
+<figure><img src="guide/money.png" alt="The Money tab"><figcaption>Owed to you, aged, and
+who to nudge first.</figcaption></figure>
+</div>
+
+<h3>Invoices</h3>
+<div class="section">
+<div class="text">
+<p>An invoice gathers completed visits into one document. Send it as a text or share the
+PDF; both carry the same line items, and both carry a pay link if you have card payments
+switched on. An issued invoice never rewrites itself. Change a price afterwards and the
+ledger changes, while the document you already sent stays as it was.</p>
+<p>Mark it paid when the check arrives, or let a recorded payment do it. If you issued one
+in error, void it: the charges go back to being billable, and the sales tax the invoice
+added comes back off.</p>
+</div>
+<figure><img src="guide/invoice.png" alt="An invoice"><figcaption>Text it or share the
+PDF. The pay link works until it is paid.</figcaption></figure>
+</div>
+
+<h3>Card payments</h3>
+<p>Card payments are optional and use Stripe. You connect your own free Stripe account,
+money lands in your bank, and Dustimony never sees a card number. Cards cost about 3.4%
+plus 30¢ per payment, which is Stripe's cut plus 0.5% to Dustimony. Cash and checks you record
+yourself cost nothing, and the app is free to use on your own.</p>
+
+<h2 id="numbers">9. Know your numbers</h2>
+<div class="section">
+<div class="text">
+<p><strong>Money → Report</strong> answers what a week, a month, a quarter or a year
+actually did. Income is what you were <em>paid</em>, not what you billed, and the report
+says so on the screen. Under it: visits, hours worked, clients gained and lost, what came
+in by payment method, and what went out by category.</p>
+<p>Page back with the arrows. Share it as a file when your accountant asks.</p>
+</div>
+<figure><img src="guide/report.png" alt="The monthly report"><figcaption>July, paged back:
+income by method, hours worked, expenses ranked.</figcaption></figure>
+</div>
+
+<div class="section">
+<div class="text">
+<h3>Expenses</h3>
+<p>Log anything the business spends, from supplies and fuel to equipment and insurance,
+with a vendor and an optional photo of the receipt. <strong>Where it went</strong> ranks the month by
+category, which is usually enough to see the leak.</p>
+<p>If you run crew, they can log expenses from their phones and the receipt photo comes
+back to you.</p>
+</div>
+<figure><img src="guide/expenses.png" alt="Expenses"><figcaption>By month, with the
+category on every row.</figcaption></figure>
+</div>
+
+<h2 id="clientpage">10. Know your clients</h2>
+<div class="section">
+<div class="text">
+<p>A client's page carries their balance, their status, and one-tap text, call and
+directions. Underneath: what they have been worth all time and this year, their average
+visit length, and every visit you have ever done for them.</p>
+<p>Mark a client paused for the season, or lost with the reason why. The reason is kept on
+the record, so the win-back list later is a list of facts rather than a guess.</p>
+</div>
+<figure><img src="guide/client.png" alt="A client page"><figcaption>Lifetime value, this
+year, average length, and the full history.</figcaption></figure>
+</div>
+
+<h2 id="crew">11. Your crew</h2>
+<div class="section">
+<div class="text">
+<p>Crew is a subscription, $18.99 a month. Setting it up is free; you subscribe before
+anyone can sign in. It gives each cleaner a login on a website, with no app to install
+and no account for them to create.</p>
+<p><strong>Settings → Turn on crew</strong> creates your business code and adds your first
+cleaner with a name and a PIN. You choose what each person can see:</p>
+<ul>
+  <li>prices, on or off</li>
+  <li>client phone numbers, on or off</li>
+  <li>access and alarm notes, on or off</li>
+  <li>the rest of the week, or only today</li>
+  <li>whether they can log expenses</li>
+</ul>
+<p>Anything a person is not allowed to see is never sent to the server in the first place,
+rather than hidden on the page.</p>
+</div>
+<figure><img src="guide/crew.png" alt="Crew settings"><figcaption>Crew sign-in state,
+teams, and what the subscription covers.</figcaption></figure>
+</div>
+
+<h3>What your cleaner sees</h3>
+<div class="section">
+<div class="text">
+<p>They open the crew website on their phone and sign in with the business code, their
+name and their PIN. No app, no password to reset, and it works on Android and iPhone
+alike. The page is in English or Spanish, their choice, on the sign-in screen.</p>
+<p>Their day is a list of stops. Tapping one opens the room checklist, the timer, and, if
+you allowed it, the door code behind a button, so it is not sitting on screen in
+someone's hand at the supermarket.</p>
+<p>What they tick, the time they log and the expenses they enter come back to you.</p>
+</div>
+<figure><img src="guide/crew-day.png" alt="The crew website, a day"><figcaption>A
+cleaner's day: their stops, and a place to log an expense.</figcaption></figure>
+<figure><img src="guide/crew-stop.png" alt="The crew website, one stop"><figcaption>One
+stop: how to get in, and the room checklist.</figcaption></figure>
+</div>
+
+<h3>Teams and the roster</h3>
+<p>Two vans, two routes. Make a team in <strong>Settings → Teams</strong>, then use the
+team filter on the Schedule tab to see one team's week at a time. <strong>Roster</strong>,
+in that same filter menu, is where you set who rides with which team on which day. That
+changes weekly, so it lives with the schedule rather than in Settings.</p>
+
+<h2 id="data">12. Your business, your data</h2>
+<div class="section">
+<div class="text">
+<p>Everything is stored on your iPhone and synced through your own private iCloud, which
+we cannot read. Two devices signed into the same Apple account stay in step. With no
+iCloud account the app still works completely; it just stays on the one phone, and the
+Settings screen says so plainly rather than pretending.</p>
+<p><strong>Automatic backups</strong> write a full copy to your iCloud Drive.
+<strong>Back up everything to a file</strong> saves one anywhere you like, and a file you
+saved yourself survives anything that happens to the app.
+<strong>Export everything as CSV</strong> hands your clients and history to a spreadsheet,
+because it is your business and it should be portable.</p>
+</div>
+<figure><img src="guide/data.png" alt="Backups and data"><figcaption>Backups, restore, and
+a CSV export of everything.</figcaption></figure>
+</div>
+
+<h2 id="help">Questions or problems</h2>
+<p>Email <a href="mailto:dustimony@loboz.com">dustimony@loboz.com</a> and a person will
+answer. The <a href="support.html">support page</a> has the common questions, and the
+<a href="privacy.html">privacy policy</a> spells out exactly what is stored and where.</p>
+</body>
+</html>
